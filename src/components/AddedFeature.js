@@ -1,4 +1,7 @@
 import React from 'react';
+import { deleteFeature } from '../actions/userEvents';
+
+//use dispatch & bring in action
 
 const AddedFeature = props => {
   return (

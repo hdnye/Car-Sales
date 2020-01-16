@@ -1,4 +1,7 @@
 import React from 'react';
+import { addFeature } from '../actions/userEvents';
+
+//use dispatch & bring in action
 
 const AdditionalFeature = props => {
   return (
