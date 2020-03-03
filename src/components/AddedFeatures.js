@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import AddedFeature from './AddedFeature';
 import { reducer } from '../reducers';
 
-const AddedFeatures = () => {
-  return (
+const AddedFeatures = ({ car }) => {
+    
+ return (
     <div className="content">
       <h6>Added features:</h6>
       {car.features.length ? (
@@ -21,7 +22,7 @@ const AddedFeatures = () => {
 };
 
 const mapStateToProps = state => ({
-  addedFeature: state.addedFeature
+  car: state.car
 })
 
-export default connect(mapStateToProps, /*add reducer here*/)(AddedFeatures);
+export default connect(mapStateToProps, { reducer })(AddedFeatures);

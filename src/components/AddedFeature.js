@@ -1,5 +1,5 @@
 import React from 'react';
-import { deleteFeature } from '../actions/userEvents';
+//import { deleteFeature } from '../actions/userEvents';
 
 //use dispatch & bring in action
 

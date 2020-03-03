@@ -8,9 +8,9 @@ import { reducer } from './reducers';
 import 'bulma/css/bulma.css';
 import './styles.scss';
 
-const middleware = [thunk];
 
-const store = createStore(reducer, applyMiddleware(...middleware));
+
+const store = createStore(reducer, applyMiddleware(thunk));
 
 
 ReactDOM.render(
