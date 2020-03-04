@@ -22,7 +22,7 @@ const Header = ({ car }) => {
   return (
     <div>
       <figure className="image is-128x128">
-        {car.image}
+        <img src={car.image} />
       </figure>
       <h2>{car.name}</h2>
       <p>Amount: {car.price}</p>

@@ -13,11 +13,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { reducer } from '../reducers';
 
-const Total = ({ car, additionPrice }) => {
+const Total = ({ car, additionalPrice }) => {
   return (
     <div className='content'>
       <h4>Total Amount:
-         {car.price + additionPrice}
+         {car.price + additionalPrice}
       </h4>
     </div>
   );
@@ -26,7 +26,7 @@ const Total = ({ car, additionPrice }) => {
 const mapStateToProps = state => {
   return {
     car: state.car, 
-    additionPrice: state.additionPrice
+    additionalPrice: state.additionalPrice
   }
 };
 

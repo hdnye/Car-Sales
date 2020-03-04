@@ -11,7 +11,7 @@ const AddedFeatures = ({ car }) => {
       {car.features.length ? (
         <ol type="1">
           {car.features.map(item => (
-            <AddedFeature key={item.id} feature={item} />
+            <AddedFeature key={item.id} features={item} />
           ))}
         </ol>
       ) : (
